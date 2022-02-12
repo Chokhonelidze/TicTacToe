@@ -3,53 +3,23 @@
   <head>
     <meta charset="UTF-8" />
     <title>React Tik Tak Toe</title>
-    <style>
-      button {
-        background-color: #0c80f3;
-        border: 6px solid #0ff166;
-        border-radius: 10px;
-      }
-      .game-board {
-        width: 600px;
-        height: 600px;
-        margin: 0 auto;
-        background-color: #34495e;
-        color: rgb(204, 28, 28);
-        border: 6px solid #0b0d0f;
-        border-radius: 10px;
-        display: grid;
-        grid-template-rows: 1fr 1fr 1fr;
-        grid-template-columns: 1fr;
-      }
-
-      .grid-row {
-        border: 6px solid #739dc7;
-        border-radius: 6px;
-        font-family: Helvetica;
-        font-weight: bold;
-        font-size: 4em;
-        display: grid;
-        grid-template-rows: 1fr;
-        grid-template-columns: 1fr 1fr 1fr;
-        background-color: rgb(175, 70, 70);
-      }
-      .block {
-        background-color: rgb(219, 28, 28);
-        border: 6px solid green;
-        border-radius: 6px;
-        font-family: Helvetica;
-        font-weight: bold;
-        font-size: 20em;
-      }
-    </style>
     <!-- Don't use this in production: -->
     <script src="https://unpkg.com/@babel/standalone/babel.min.js"></script>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link rel="stylesheet" href="./styles.css" />
+    <script src="../main/nav.js"></script>
   </head>
   <body>
-    <h1>React Tik Tak Toe</h1>
+    <div class="header">
 
+    </div>
+    <div class='about'>
+      <a href='https://github.com/Chokhonelidze/TicTacToe'  target="_blank">
+        <img src='https://www.logo.wine/a/logo/GitHub/GitHub-Logo.wine.svg'  />    
+    </a>
+    <h1>React Tik Tak Toe</h1>
     <!-- We will put our React component inside this div. -->
-    <div id="root"></div>
+    <div id="root" class="main"></div>
 
     <!-- Load React. -->
     <script
@@ -63,5 +33,9 @@
 
     <!-- Load our React component. -->
     <script src="myjs.js" defer type="text/babel"></script>
+    <script>
+      let elem = document.getElementsByClassName('header')[0];
+      buildNav(elem,"Watching Eyes");
+    </script>
   </body>
 </html>
