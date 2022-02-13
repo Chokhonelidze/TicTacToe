@@ -68,14 +68,14 @@ const Board = () => {
   if(winner){
     setTimeout(() => {
       setBoard([0,0,0,0,0,0,0,0,0]);
-      setPlayer(1);
+      setPlayer(-1);
 
     }, 3000);
   }
   else if(!winner && !board.includes(0) ){
     setTimeout(() => {
       setBoard([0,0,0,0,0,0,0,0,0]);
-      setPlayer(1);
+      setPlayer(-1);
 
     }, 3000);
   }
