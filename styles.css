@@ -157,3 +157,10 @@ button {
   font-weight: bold;
   font-size: 20em;
 }
+#score {
+  background-color:blanchedalmond;
+  color:blue;
+}
+#score ul li {
+  list-style:numberic;
+}
